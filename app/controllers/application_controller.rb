@@ -17,7 +17,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/articles/new' do
-    @article = Articles.find_by_id(:id)
     erb :new
   end
 
